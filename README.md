@@ -183,11 +183,14 @@ kubectl version --client
 **Mac Way**
 
 Install Brew (if it is not already installed). Open terminal as Administrator and run the command:
+
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+````
 
 1 - Install Azure CLI
 
-```bash
+
 brew update && brew install azure-cli
 ````
 

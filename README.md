@@ -190,7 +190,7 @@ Install Brew (if it is not already installed). Open terminal as Administrator an
 
 1 - Install Azure CLI
 
-
+```bash
 brew update && brew install azure-cli
 ````
 

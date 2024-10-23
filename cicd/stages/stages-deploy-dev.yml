@@ -77,4 +77,4 @@ jobs:
           overrideValues: |
             image.repository=$(imageRepository)
             image.tag=$(imageTag)
-            replicaCount=3
+            replicaCount=1

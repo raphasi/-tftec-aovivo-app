@@ -6,11 +6,11 @@ trigger:
 # Modicar os valores das variáveis de acordo com o ambiente!!!
 variables:
   helmVersion: 'latest' # Versão do Helm a ser instalada
-  acrName: 'acrtftectesteado123' # Nome do Azure Container Registry 
+  acrName: 'acrtftecuksouth8503' # Nome do Azure Container Registry 
   azureSubscription: 'tftec-devops' # Nome da subscrição do Azure
   azureResourceGroup: 'rg-tftec-kubernetes' # Nome do grupo de recursos do Azure
-  kubernetesCluster: 'aks-tftec-brazilsouth-001' # Nome do cluster Kubernetes
-  imageRepository: 'acrtftectesteado123.azurecr.io/image/ao-vivo-sp-24/tftec-app' # Repositório da imagem Docker
+  kubernetesCluster: 'aks-tftec-uksouth-001' # Nome do cluster Kubernetes
+  imageRepository: 'acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app' # Repositório da imagem Docker
   imageTag: 'latest' # Tag da imagem Docker
   namespace: 'tftecaovivo' # Namespace do Kubernetes
   chartVersion: '000' # Versão do Helm Chart

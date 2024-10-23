@@ -12,7 +12,7 @@ variables:
   kubernetesCluster: 'aks-tftec-uksouth-001' # Nome do cluster Kubernetes
   imageRepository: 'acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app' # Repositório da imagem Docker
   imageTag: '28' # Tag da imagem Docker
-  namespace: 'tftecaovivo' # Namespace do Kubernetes
+  namespace: 'tftec-prd' # Namespace do Kubernetes
   chartVersion: '28' # Versão do Helm Chart
   environment: 'aovivo' # Ambiente de deploy
 
@@ -71,7 +71,7 @@ jobs:
           command: 'upgrade'
           chartType: 'FilePath'
           chartPath: './tftec-app'
-          releaseName: tftec-app-microservice # Nome do release
+          releaseName: tftec-api-auth-prd # Nome do release
           createNamespace: false
           namespace: $(namespace)
           overrideValues: |

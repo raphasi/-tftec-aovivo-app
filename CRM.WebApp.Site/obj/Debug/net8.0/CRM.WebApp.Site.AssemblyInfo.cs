@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRM.WebApp.Site")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7feb5513ae521a7396948eb34a8c4949e334958b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26b4d697e6636300bf0c0d1c5312615ab514a57f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRM.WebApp.Site")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRM.WebApp.Site")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

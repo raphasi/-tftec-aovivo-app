@@ -10,7 +10,12 @@ image:
 
 service:
   type: LoadBalancer  # Ou NodePort, dependendo de como você quer acessar
-  port: 8080          # Porta que você deseja expor
-  targetPort: 8080    # Porta onde sua aplicação está rodando dentro do contêiner
+  ports:
+    - name: http-port
+      port: 8080          # Porta exposta pelo serviço
+      targetPort: 8080    # Porta onde sua aplicação está rodando dentro do contêiner
+    - name: http-alt-port
+      port: 8081          # Outra porta exposta pelo serviço
+      targetPort: 8081    # Porta onde sua aplicação está rodando dentro do contêiner
 
 environment: aovivo  # Adicione a variável environment

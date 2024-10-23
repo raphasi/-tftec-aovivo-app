@@ -1,31 +1,33 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-# Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
-# For more information, please see https://aka.ms/containercompat
+# Verificar a compatibilidade do sistema operacional do host
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809 AS base
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
+# Definindo a imagem SDK
 FROM mcr.microsoft.com/dotnet/sdk:8.0-nanoserver-1809 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copia apenas os arquivos da solução e o .csproj para o build context
+# Trocar para o usuário Administrator para evitar problemas de permissão
+USER Administrator
+
+# Copia o arquivo de projeto e faz o restore das dependências
 COPY ["CRM.API.AUTH/CRM.API.AUTH.csproj", "CRM.API.AUTH/"]
 RUN dotnet restore "CRM.API.AUTH/CRM.API.AUTH.csproj"
 
-# Copia todo o conteúdo do projeto agora que o restore foi feito
+# Copia o restante do projeto e realiza o build
 COPY . .
-
 WORKDIR "/src/CRM.API.AUTH"
 RUN dotnet build "CRM.API.AUTH.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
+# Fase de publicação
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "CRM.API.AUTH.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
+# Imagem final
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .

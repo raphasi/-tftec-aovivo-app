@@ -27,6 +27,7 @@ Variable group name: `tftec-app-vars`
 
 | **Variable**           | **Value**                                |
 |------------------------|------------------------------------------|
+| containerRegistry      | acrtftecuksouth8503.azurecr.io           |
 | dockerfilePath          | docker/Dockerfile                         |
 | HelmRepoName           | helm-chart/ao-vivo-sp-24                 |
 | imageRepository        | image/ao-vivo-sp-24/tftec-app            |

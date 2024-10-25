@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Release.Name }}-ingress  # Usando o nome da release
+  annotations:
+    appgw.ingress.kubernetes.io/ssl-redirect: "true"
+    appgw.ingress.kubernetes.io/appgw-ssl-certificate: "{{ .Values.ingress.sslCertificate }}"
+spec:
+  ingressClassName: azure-application-gateway
+  tls:
+  - hosts:
+    - {{ .Values.ingress.host }}  # Usando a variável do host
+    secretName: {{ .Values.ingress.secretName }}  # Nome do secret
+  rules:
+  - host: {{ .Values.ingress.host }}  # Usando a variável do host
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Release.Name }}-service  # Nome do serviço
+            port:
+              number: 80  # Porta do serviço exposta pelo Ingress

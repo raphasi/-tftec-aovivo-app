@@ -4,13 +4,12 @@ metadata:
   name: {{ .Release.Name }}-ingress
   annotations:
     appgw.ingress.kubernetes.io/ssl-redirect: "true"
-    appgw.ingress.kubernetes.io/appgw-ssl-certificate: "{{ .Values.ingress.sslCertificate }}"
+    appgw.ingress.kubernetes.io/appgw-ssl-certificate: "{{ .Values.ingress.sslCertificate }}"  # Certificado gerenciado pelo Application Gateway
 spec:
   ingressClassName: azure-application-gateway
   tls:
   - hosts:
     - {{ .Values.ingress.host }}  # Usando a variável do host
-    secretName: {{ .Values.ingress.secretName }}  # Nome do secret
   rules:
   - host: {{ .Values.ingress.host }}  # Usando a variável do host
     http:

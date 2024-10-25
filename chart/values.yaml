@@ -5,20 +5,20 @@
 replicaCount: 1  # Número padrão de réplicas
 
 image:
-  repository: acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app  # Repositório da imagem que deve ser modificado conforme necessário.
-  tag: latest  # Tag padrão da imagem
+  repository: acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app  # Repositório da imagem
+  tag: latest  # Tag padrão da imagem, pode ser modificada conforme necessário
 
 service:
   type: ClusterIP  # Usar ClusterIP, já que o Ingress irá gerenciar o tráfego
   ports:
-    - name: http-port
-      port: 80          # Porta exposta pelo serviço
-      targetPort: 8080  # Porta onde sua aplicação está rodando dentro do contêiner
+    - name: http-port  # Nome do serviço
+      port: 80          # Porta exposta pelo serviço (externa)
+      targetPort: 8080  # Porta interna onde sua aplicação está rodando dentro do contêiner
 
 ingress:
   enabled: true  # Ativar o Ingress
-  host: auth.tftecspdev.shop  # Host para o Ingress
-  sslCertificate: cert-auth  # Nome do certificado
-  secretName: tls-secret  # Nome do secret TLS
+  host: auth.tftecspdev.shop  # Domínio/host configurado para o Ingress
+  sslCertificate: cert-auth  # Nome do certificado SSL no Application Gateway
+  secretName: tls-secret  # Nome do secret TLS associado ao certificado SSL
 
-environment: aovivo  # Adicione a variável environment
+environment: aovivo  # Ambiente de deployment (produção, desenvolvimento, etc.)

@@ -18,7 +18,6 @@ service:
 ingress:
   enabled: true  # Ativar o Ingress
   host: auth.tftecspdev.shop  # Domínio/host configurado para o Ingress
-  sslCertificate: cert-auth  # Nome do certificado SSL no Application Gateway
-  secretName: tls-secret  # Nome do secret TLS associado ao certificado SSL
+  sslCertificate: cert-auth  # Nome do certificado no Azure Key Vault
 
 environment: aovivo  # Ambiente de deployment (produção, desenvolvimento, etc.)

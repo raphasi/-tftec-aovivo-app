@@ -1,8 +1,7 @@
 # Etapa de base para o runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 8088
-EXPOSE 8081
+EXPOSE 80
 
 # Etapa de construção com a imagem SDK do .NET
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build

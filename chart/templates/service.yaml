@@ -3,13 +3,10 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-service
 spec:
-  type: {{ .Values.service.type }}  # Será ClusterIP
+  type: {{ .Values.service.type }}  # Usar ClusterIP, conforme especificado no values.yaml
   ports:
-{{- range .Values.service.ports }}
-    - name: {{ .name }}
-      port: {{ .port }}           # Porta exposta pelo serviço (agora 80)
-      targetPort: {{ .targetPort }}  # Porta onde o contêiner está escutando
-      protocol: TCP
-{{- end }}
+    - name: http-port
+      port: {{ .Values.service.ports[0].port }}         # Porta exposta pelo serviço
+      targetPort: {{ .Values.service.ports[0].targetPort }}  # Porta onde sua aplicação está rodando dentro do contêiner
   selector:
     app: {{ .Release.Name }}

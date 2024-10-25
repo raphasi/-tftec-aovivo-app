@@ -11,19 +11,10 @@ variables:
   azureResourceGroup: 'rg-tftec-kubernetes' # Nome do grupo de recursos do Azure
   kubernetesCluster: 'aks-tftec-uksouth-001' # Nome do cluster Kubernetes
   imageRepository: 'acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app' # Repositório da imagem Docker
+  imageTag: '39' # Tag da imagem Docker
   namespace: 'tftec-dev' # Namespace do Kubernetes
+  chartVersion: '39' # Versão do Helm Chart
   environment: 'aovivo' # Ambiente de deploy
-
-# Definindo parâmetros editáveis no momento da execução
-parameters:
-  - name: imageTag
-    displayName: 'Tag da Imagem Docker'
-    type: string
-    default: '36'
-  - name: chartVersion
-    displayName: 'Versão do Helm Chart'
-    type: string
-    default: '36'
 
 jobs:
   - job: HelmDeploy
@@ -85,5 +76,5 @@ jobs:
           namespace: $(namespace)
           overrideValues: |
             image.repository=$(imageRepository)
-            image.tag=$(imageTag)  # Usando a tag fornecida durante a execução
+            image.tag=$(imageTag)
             replicaCount=1

@@ -9,10 +9,16 @@ image:
   tag: latest  # Tag padrão da imagem
 
 service:
-  type: LoadBalancer  # Ou NodePort, dependendo de como você quer acessar
+  type: ClusterIP  # Usar ClusterIP, já que o Ingress irá gerenciar o tráfego
   ports:
     - name: http-port
-      port: 8080          # Porta exposta pelo serviço
-      targetPort: 8080    # Porta onde sua aplicação está rodando dentro do contêiner
+      port: 80          # Porta exposta pelo serviço
+      targetPort: 8080  # Porta onde sua aplicação está rodando dentro do contêiner
+
+ingress:
+  enabled: true  # Ativar o Ingress
+  host: auth.tftecspdev.shop  # Host para o Ingress
+  sslCertificate: cert-auth  # Nome do certificado
+  secretName: tls-secret  # Nome do secret TLS
 
 environment: aovivo  # Adicione a variável environment

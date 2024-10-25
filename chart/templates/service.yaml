@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-service
 spec:
-  type: {{ .Values.service.type }}  # LoadBalancer ou NodePort
+  type: {{ .Values.service.type }}  # Será ClusterIP
   ports:
 {{- range .Values.service.ports }}
     - name: {{ .name }}
-      port: {{ .port }}           # Porta exposta pelo serviço
+      port: {{ .port }}           # Porta exposta pelo serviço (agora 80)
       targetPort: {{ .targetPort }}  # Porta onde o contêiner está escutando
       protocol: TCP
 {{- end }}

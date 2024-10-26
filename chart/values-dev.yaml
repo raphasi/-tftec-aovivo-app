@@ -14,5 +14,4 @@ ingress:
   host: auth.tftecspdev.shop  # Host para o ambiente de produção
   sslCertificate: cert-auth  # Certificado para o ambiente de produção
 
-environment: "dev"
-secretTemplate: "secret-dev.yaml"
+environment: dev

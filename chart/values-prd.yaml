@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: true  # Habilita o Ingress em produção
+  host: auth.tftecspprd.shop  # Host para o ambiente de produção
+  sslCertificate: cert-auth  # Certificado para o ambiente de produção

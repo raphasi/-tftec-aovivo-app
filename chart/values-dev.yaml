@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: false  # Não habilita o Ingress em dev

@@ -5,7 +5,7 @@ This repository is part of the presentation **"TFTEC AO VIVO EM SÃO PAULO 2024"
 1. Azure Cloud Subscription
 2. Azure Devops
 3. Course Github Repositories
-4. [Basic infrastructure created in the previous lab: Azure Kubernetes Service with Azure DevOps and Terraform](https://github.com/asilvajunior/tftec-terraform-aovivo-24)
+4. Basic infrastructure created in the previous lab: Azure Kubernetes Service with Azure DevOps and Terraform
 5. Azure CLI
 6. Kubernetes kubectl tool 
 

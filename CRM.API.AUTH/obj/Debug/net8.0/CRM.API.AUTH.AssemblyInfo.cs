@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRM.API.AUTH")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f8c2a7b9ffbb102c052ed2ace15173cd57098bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43d21272a6522a8f6bb16e6f5f2ba6210e67179a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRM.API.AUTH")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRM.API.AUTH")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,7 +14,7 @@ variables:
   imageTag: '57' # Tag da imagem Docker
   namespace: 'tftec-dev' # Namespace do Kubernetes
   chartVersion: '57' # Versão do Helm Chart
-  environment: 'aovivo' # Ambiente de deploy
+  environment: 'dev' # Ambiente de deploy
 
 jobs:
   - job: HelmDeploy
@@ -78,3 +78,4 @@ jobs:
             image.repository=$(imageRepository)
             image.tag=$(imageTag)
             replicaCount=1
+          valuesFile: 'values-$(environment).yaml'

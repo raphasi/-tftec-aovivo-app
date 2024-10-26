@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRM.CrossCutting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+979b5423b0b73c9788aafe9c5d08a8d52a0323e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc23f184166914914be0dfa1fe2e359b1927f109")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRM.CrossCutting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRM.CrossCutting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

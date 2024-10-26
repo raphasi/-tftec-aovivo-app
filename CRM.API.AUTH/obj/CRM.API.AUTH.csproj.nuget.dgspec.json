@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.AUTH/CRM.API.AUTH.csproj": {}
+    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.AUTH/CRM.API.AUTH.csproj": {}
   },
   "projects": {
-    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.AUTH/CRM.API.AUTH.csproj": {
+    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.AUTH/CRM.API.AUTH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.AUTH/CRM.API.AUTH.csproj",
+        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.AUTH/CRM.API.AUTH.csproj",
         "projectName": "CRM.API.AUTH",
-        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.AUTH/CRM.API.AUTH.csproj",
+        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.AUTH/CRM.API.AUTH.csproj",
         "packagesPath": "/Users/asilva/.nuget/packages/",
-        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.AUTH/obj/",
+        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.AUTH/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj": {
+    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj",
+        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj",
         "projectName": "CRM.Application",
-        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj",
+        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj",
         "packagesPath": "/Users/asilva/.nuget/packages/",
-        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/obj/",
+        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -109,11 +109,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj"
               },
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj"
               }
             }
           }
@@ -182,14 +182,14 @@
         }
       }
     },
-    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj": {
+    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj",
+        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj",
         "projectName": "CRM.CrossCutting",
-        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj",
+        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj",
         "packagesPath": "/Users/asilva/.nuget/packages/",
-        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/obj/",
+        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -204,14 +204,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj"
               },
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj"
               },
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj"
               }
             }
           }
@@ -300,14 +300,14 @@
         }
       }
     },
-    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {
+    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj",
+        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj",
         "projectName": "CRM.Domain",
-        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj",
+        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj",
         "packagesPath": "/Users/asilva/.nuget/packages/",
-        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/obj/",
+        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -358,14 +358,14 @@
         }
       }
     },
-    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj": {
+    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj",
+        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj",
         "projectName": "CRM.Infrastructure",
-        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj",
+        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj",
         "packagesPath": "/Users/asilva/.nuget/packages/",
-        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/obj/",
+        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -380,8 +380,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {
-                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj"
+              "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {
+                "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj"
               }
             }
           }

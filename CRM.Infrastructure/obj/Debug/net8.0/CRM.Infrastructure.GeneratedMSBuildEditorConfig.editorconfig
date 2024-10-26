@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CRM.Infrastructure
-build_property.ProjectDir = /Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/
+build_property.ProjectDir = /Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

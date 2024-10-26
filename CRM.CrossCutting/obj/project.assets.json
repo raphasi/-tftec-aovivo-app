@@ -11777,11 +11777,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj",
+      "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj",
       "projectName": "CRM.CrossCutting",
-      "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj",
+      "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj",
       "packagesPath": "/Users/asilva/.nuget/packages/",
-      "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/obj/",
+      "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -11796,14 +11796,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj": {
-              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj"
+            "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj": {
+              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj"
             },
-            "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {
-              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj"
+            "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {
+              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj"
             },
-            "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj": {
-              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Infrastructure/CRM.Infrastructure.csproj"
+            "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj": {
+              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Infrastructure/CRM.Infrastructure.csproj"
             }
           }
         }

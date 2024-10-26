@@ -12063,11 +12063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.BEND/CRM.API.BEND.csproj",
+      "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.BEND/CRM.API.BEND.csproj",
       "projectName": "CRM.API.BEND",
-      "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.BEND/CRM.API.BEND.csproj",
+      "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.BEND/CRM.API.BEND.csproj",
       "packagesPath": "/Users/asilva/.nuget/packages/",
-      "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.API.BEND/obj/",
+      "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.API.BEND/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/asilva/.nuget/NuGet/NuGet.Config"
@@ -12082,8 +12082,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj": {
-              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.CrossCutting/CRM.CrossCutting.csproj"
+            "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj": {
+              "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.CrossCutting/CRM.CrossCutting.csproj"
             }
           }
         }

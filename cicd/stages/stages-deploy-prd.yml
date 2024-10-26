@@ -11,9 +11,9 @@ variables:
   azureResourceGroup: 'rg-tftec-kubernetes' # Nome do grupo de recursos do Azure
   kubernetesCluster: 'aks-tftec-uksouth-001' # Nome do cluster Kubernetes
   imageRepository: 'acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app' # Repositório da imagem Docker
-  imageTag: '103' # Tag da imagem Docker
+  imageTag: '106' # Tag da imagem Docker
   namespace: 'tftec-prd' # Namespace do Kubernetes
-  chartVersion: '103' # Versão do Helm Chart
+  chartVersion: '106' # Versão do Helm Chart
   environment: 'prd' # Ambiente de deploy
 
 jobs:

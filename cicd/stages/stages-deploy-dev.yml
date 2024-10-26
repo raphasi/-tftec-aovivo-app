@@ -78,4 +78,4 @@ jobs:
             image.repository=$(imageRepository)
             image.tag=$(imageTag)
             replicaCount=1
-          valuesFile: 'values-$(environment).yaml'
+          valuesFile: 'chart/templates/values-$(environment).yaml'

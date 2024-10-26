@@ -14,13 +14,6 @@ spec:
   - host: {{ .Values.ingress.host }}  # Usando a variável do host
     http:
       paths:
-      - path: /swagger
-        pathType: Prefix
-        backend:
-          service:
-            name: {{ .Release.Name }}-service  # Nome do serviço
-            port:
-              number: {{ .Values.service.port }}  # Porta do serviço exposta pelo Ingress
       - path: /
         pathType: Prefix
         backend:

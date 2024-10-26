@@ -30,6 +30,7 @@ app.UseSwaggerUI(c =>
     c.OAuthUsePkce();
     c.OAuthScopeSeparator(" ");
     c.SwaggerEndpoint("swagger/v1/swagger.json", "My API V1");
+    c.RoutePrefix = string.Empty;
 });
 
 app.UseHttpsRedirection();

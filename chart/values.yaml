@@ -1,13 +1,13 @@
-replicaCount: 1
+eplicaCount: 1  # Número padrão de réplicas
 
 image:
-  repository: acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app
-  tag: latest
+  repository: acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app  # Repositório da imagem
+  tag: latest  # Tag padrão da imagem
 
 service:
-  type: ClusterIP
-  port: 80
-  targetPort: 8080
+  type: ClusterIP  # Usar ClusterIP, já que o Ingress irá gerenciar o tráfego
+  port: 80          # Porta exposta pelo serviço (externa)
+  targetPort: 8080 # Porta interna onde sua aplicação está rodando dentro do contêiner
 
 ingress:
   enabled: false  # Não habilita o Ingress em dev

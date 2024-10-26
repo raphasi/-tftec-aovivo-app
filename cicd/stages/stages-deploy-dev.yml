@@ -74,6 +74,7 @@ jobs:
           releaseName: tftec-api-auth-dev # Nome do release
           createNamespace: false
           namespace: $(namespace)
+          valueFile: './chart/values-dev.yaml'
           overrideValues: |
             image.repository=$(imageRepository)
             image.tag=$(imageTag)

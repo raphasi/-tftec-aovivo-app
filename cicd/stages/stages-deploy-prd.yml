@@ -1,27 +1,20 @@
-parameters:
-  - name: imageTag
-    type: string
-    default: '28'  # Valor padrão
-    displayName: 'Tag da imagem Docker'
+trigger:
+  paths:
+    include:
+      - cicd/stages/stages-deploy-prd.yml # Aciona se houver mudanças no diretório de stages-deploy.yml
 
-  - name: chartVersion
-    type: string
-    default: '28'  # Valor padrão
-    displayName: 'Versão do Helm Chart'
-
-# Remove o trigger automático
-trigger: none
-
-# Variáveis globais
+# Modicar os valores das variáveis de acordo com o ambiente!!!
 variables:
-  helmVersion: 'latest' 
-  acrName: 'acrtftecuksouth8503'
-  azureSubscription: 'tftec-devops'
-  azureResourceGroup: 'rg-tftec-kubernetes'
-  kubernetesCluster: 'aks-tftec-uksouth-001'
-  imageRepository: 'acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app'
-  namespace: 'tftec-prd' 
-  environment: 'prd'
+  helmVersion: 'latest' # Versão do Helm a ser instalada
+  acrName: 'acrtftecuksouth8503' # Nome do Azure Container Registry 
+  azureSubscription: 'tftec-devops' # Nome da subscrição do Azure
+  azureResourceGroup: 'rg-tftec-kubernetes' # Nome do grupo de recursos do Azure
+  kubernetesCluster: 'aks-tftec-uksouth-001' # Nome do cluster Kubernetes
+  imageRepository: 'acrtftecuksouth8503.azurecr.io/image/ao-vivo-sp-24/tftec-app' # Repositório da imagem Docker
+  imageTag: '62' # Tag da imagem Docker
+  namespace: 'tftec-prd' # Namespace do Kubernetes
+  chartVersion: '62' # Versão do Helm Chart
+  environment: 'prd' # Ambiente de deploy
 
 jobs:
   - job: HelmDeploy
@@ -46,7 +39,7 @@ jobs:
       - script: |
           echo "Baixando o Helm Chart diretamente do ACR..."
           export HELM_EXPERIMENTAL_OCI=1
-          helm pull oci://$(acrName).azurecr.io/helm-chart/ao-vivo-sp-24/tftec-app --version ${{ parameters.chartVersion }} --untar
+          helm pull oci://$(acrName).azurecr.io/helm-chart/ao-vivo-sp-24/tftec-app --version $(chartVersion) --untar
         displayName: 'Pull Helm Chart from ACR'
 
       - task: AzureCLI@2
@@ -78,11 +71,10 @@ jobs:
           command: 'upgrade'
           chartType: 'FilePath'
           chartPath: './tftec-app'
-          releaseName: tftec-api-auth-prd 
+          releaseName: tftec-api-auth-prd # Nome do release
           createNamespace: false
           namespace: $(namespace)
           overrideValues: |
             image.repository=$(imageRepository)
-            image.tag=${{ parameters.imageTag }}  # Usando o parâmetro fornecido
+            image.tag=$(imageTag)
             replicaCount=3
-          valuesFile: 'values-$(environment).yaml'

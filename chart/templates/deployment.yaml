@@ -16,7 +16,7 @@ spec:
         - name: "{{ .Release.Name }}"  # Usando variável para o nome
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}  # Usando variáveis para o repositório e a tag
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           volumeMounts:
             - name: appsettings-volume
               mountPath: /app/appsettings.json  # Ajuste para o caminho desejado

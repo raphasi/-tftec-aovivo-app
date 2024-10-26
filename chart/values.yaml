@@ -7,7 +7,7 @@ image:
 service:
   type: ClusterIP  # Usar ClusterIP, já que o Ingress irá gerenciar o tráfego
   port: 80          # Porta exposta pelo serviço (externa)
-  targetPort: 80 # Porta interna onde sua aplicação está rodando dentro do contêiner
+  targetPort: 8080 # Porta interna onde sua aplicação está rodando dentro do contêiner
 
 ingress:
   enabled: true  # Ativar o Ingress

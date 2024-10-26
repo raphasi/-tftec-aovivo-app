@@ -13,3 +13,5 @@ ingress:
   enabled: true  # Habilita o Ingress em produção
   host: auth.tftecspprd.shop  # Host para o ambiente de produção
   sslCertificate: cert-auth  # Certificado para o ambiente de produção
+
+  environment: prd

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {}
+    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {}
   },
   "projects": {
-    "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj": {
+    "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj",
+        "projectUniqueName": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj",
         "projectName": "CRM.Domain",
-        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/CRM.Domain.csproj",
+        "projectPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/CRM.Domain.csproj",
         "packagesPath": "/Users/asilva/.nuget/packages/",
-        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Domain/obj/",
+        "outputPath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asilva/.nuget/NuGet/NuGet.Config"

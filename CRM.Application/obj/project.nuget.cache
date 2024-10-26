@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U6Xqx7JpnJs=",
+  "dgSpecHash": "VzZpd7l4EjU=",
   "success": true,
-  "projectFilePath": "/Users/asilva/Desktop/tftec-aovivo-app-1/CRM.Application/CRM.Application.csproj",
+  "projectFilePath": "/Users/asilva/Desktop/tftec-aovivo-app/CRM.Application/CRM.Application.csproj",
   "expectedPackageFiles": [
     "/Users/asilva/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/asilva/.nuget/packages/azure.core/1.41.0/azure.core.1.41.0.nupkg.sha512",

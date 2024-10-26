@@ -24,4 +24,4 @@ spec:
       volumes:
         - name: appsettings-volume
           secret:
-            secretName: "{{ .Release.Name }}-appsettings-{{ .Values.env }}"  # Usando variável para o nome
+            secretName: "{{ .Release.Name }}-appsettings"  # Usando variável para o nome

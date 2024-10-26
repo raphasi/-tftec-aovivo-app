@@ -29,6 +29,7 @@ app.UseSwaggerUI(c =>
     c.OAuthClientId(builder.Configuration["SwaggerAzureAd:ClientId"]);
     c.OAuthUsePkce();
     c.OAuthScopeSeparator(" ");
+    c.SwaggerEndpoint("swagger/v1/swagger.json", "My API V1");
 });
 
 app.UseHttpsRedirection();
